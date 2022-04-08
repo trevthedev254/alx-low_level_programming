@@ -10,22 +10,20 @@ int main(void)
 {
 	int i, a;
 
-	for (i = '0'; i < '9'; i++)
+	for (i = 0; i < 9; i++)
 	{
-		for (a = i + 1; a <= '9'; a++)
+		for (a = i + 1; a < 10; a++)
 		{
-			if (i != a) 
-				{
-					putchar(i);
-					putchar(a);
-				
-					if (i == '7' && a == '8')
-						continue;
+			putchar((i % 10) + '0');
+			putchar((a % 10) + '0');
 
-					putchar(',');
-					putchar(' ');
-				}
-		}	
+			if (i == '8' && a == '9')
+				continue;
+
+			putchar(',');
+			putchar(' ');
+
+		}
 	}
 	putchar('\n');
 
