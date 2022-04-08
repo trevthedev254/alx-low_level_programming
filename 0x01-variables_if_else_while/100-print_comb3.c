@@ -8,17 +8,24 @@
 
 int main(void)
 {
-	int i;
+	int i, a;
 
-	for (i = 0; i < 100; i++)
+	for (i = '0'; i < '9'; i++)
 	{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-		if (i != 99)
+		for (a = i + 1; a <= '9'; a++)
 		{
-			putchar(',');
-			putchar(' ');
-		}
+			if (i != a) 
+				{
+					putchar(i);
+					putchar(a);
+				
+					if (i == '7' && a == '8')
+						continue;
+
+					putchar(',');
+					putchar(' ');
+				}
+		}	
 	}
 	putchar('\n');
 
