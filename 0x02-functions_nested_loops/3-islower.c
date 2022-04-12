@@ -8,14 +8,12 @@
 int _islower(int c)
 {
 	char a;
-	int lower;
+	int lower = 0;
 
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		if (a == c)
 			lower = 1;
-		else
-			lower = 0;
 	}
 	return (lower);
 }
