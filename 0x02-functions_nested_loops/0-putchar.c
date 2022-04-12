@@ -1,13 +1,13 @@
-/*
+#include<main.h>
+
+/**
  * main - prints _putchar
  *
  * Return: Always 0.
  */
 
-int printf(const char *format, ...)
-
-int main()
+int main(void)
 {
 	printf("_putchar\n");
-	return 0;
+	return (0);
 }
