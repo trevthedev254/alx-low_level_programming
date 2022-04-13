@@ -3,7 +3,7 @@
 /**
  * main - sum of natural numbers dividible by 3 or 5
  *
- * Return - sum of natural numbers
+ * Return - Always 0
  */
 
 int main(void)
@@ -19,5 +19,5 @@ int main(void)
 	}
 	printf("%d\n", sum);
 
-	return (sum);
+	return (0);
 }
