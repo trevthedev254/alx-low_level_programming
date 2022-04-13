@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int i = 1, j = 2;
-	int next = i + j;
+	int i = 1, j = 2, next = 0;
 
 	while (next < 4000000 && (next % 2) == 0)
 	{
