@@ -8,17 +8,19 @@
 
 int main(void)
 {
-	int i = 0, j = 1, next = 0, sum;
+	int i;
+	long int next[50], sum = 2;
 
-	next = i + j;
-	while (next < 4000000 && (next % 2) == 0)
+	next[0] = 1;
+	next[1] = 2;
+
+	for (i = 2; i < 50; i++)
 	{
-		i = j;
-		j = next;
-		next = i + j;
-		sum += next;
+		next[i] = next[i - 1] + next[i - 2];
+		if ((next[i] % 2) == 0 && next[i] < 4000000)
+			sum += next[i];
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 
 	return (0);
 }
