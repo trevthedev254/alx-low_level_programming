@@ -8,7 +8,7 @@
 
 int _isupper(int c)
 {
-	char upper;
+	int upper;
 	int alpha;
 
 	for (upper = 'A'; upper <= 'Z'; upper++)
@@ -25,9 +25,9 @@ int _isupper(int c)
 		{
 			alpha = 0;
 			_putchar(upper + '0');
-                        _putchar(':');
-                        _putchar(' ');
-                        _putchar(alpha + '0');
+			_putchar(':');
+			_putchar(' ');
+			_putchar(alpha + '0');
 		}
 	}
 
