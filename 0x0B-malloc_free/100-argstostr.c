@@ -40,6 +40,7 @@ char *argstostr(int ac, char **av)
 		str[k] = '\n';
 		k++;
 	}
-
+	
+	str[k] = '\n';
 	return (str);
 }
