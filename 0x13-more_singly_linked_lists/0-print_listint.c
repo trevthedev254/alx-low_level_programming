@@ -1,8 +1,11 @@
 #include "lists.h"
+#include <stdio.h>
+
 /**
- * print_listint - prints all the elements of a list
- * @h: pointer to a listint struct
- * Return: Number of nodes
+ * print_listint -  prints all the elements of list.
+ * @h: list to print
+ *
+ * Return: number of elements
  */
 size_t print_listint(const listint_t *h)
 {
