@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
  * *add_nodeint - function that adds a new node at the beginning
  * @head: pointer to the structure
