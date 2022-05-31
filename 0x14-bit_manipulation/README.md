@@ -1,12 +1,11 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+0-binary_to_uint.c - function that converts a binary number to an unsigned int.
 
-int _putchar(char);
-unsigned int binary_to_uint(const char *b);
-void print_binary(unsigned long int n);
-int get_bit(unsigned long int n, unsigned int index);
-int set_bit(unsigned long int *n, unsigned int index);
-int clear_bit(unsigned long int *n, unsigned int index);
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
+1-print_binary.c - function that prints the binary representation of a number.
 
-#endif
+2-get_bit.c - function that returns the value of a bit at a given index.
+
+3-set_bit.c - function that sets the value of a bit to 1 at a given index.
+
+4-clear_bit.c - function that sets the value of a bit to 0 at a given index.
+
+5-flip_bits.c - function that returns the number of bits you would need to flip to get from one number to another.
